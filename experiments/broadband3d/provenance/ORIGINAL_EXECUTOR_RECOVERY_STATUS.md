@@ -22,6 +22,6 @@ This package therefore does **not** reconstruct code from prose and present it a
 
 ## Later reimplementation
 
-The `reimplementation/` directory contains a later protocol-faithful implementation with focused tests and a structural/algebraic verifier.
+The `reference_implementation/` directory contains a protocol-faithful reference implementation with focused tests and a structural/algebraic verifier.
 
 It is provided for transparency and usability, but it remains explicitly separate from the recovered historical source. The absence of the original orchestration/training/evaluator bytes is unchanged by that reimplementation.

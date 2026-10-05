@@ -8,7 +8,7 @@ import sys
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-P = ROOT / "broadband3d_protocol_reimplementation.py"
+P = ROOT / "broadband3d_protocol_reference.py"
 spec = importlib.util.spec_from_file_location("bb_reimpl_test", P)
 m = importlib.util.module_from_spec(spec)
 sys.modules[spec.name] = m

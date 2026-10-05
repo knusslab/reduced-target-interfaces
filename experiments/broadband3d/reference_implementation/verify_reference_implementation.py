@@ -1,7 +1,6 @@
-"""Offline verifier for the clean Broadband 3D REIMPLEMENTATION.
+"""Offline verifier for the Broadband 3D protocol reference implementation.
 
-This verifier intentionally does not generate frozen role trajectories, train models,
-or open/re-evaluate the historical TEST endpoint.
+This verifier checks the preserved contract mechanics without presenting the reference implementation as the byte-identical historical training/evaluation executor.
 """
 from __future__ import annotations
 
@@ -15,7 +14,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parent
 BROADBAND = ROOT.parent
-MOD_PATH = ROOT / "broadband3d_protocol_reimplementation.py"
+MOD_PATH = ROOT / "broadband3d_protocol_reference.py"
 
 
 def require(cond, msg):
@@ -34,8 +33,8 @@ def load_module():
 def main():
     m = load_module()
     checks = []
-    boundary = (ROOT / "REIMPLEMENTATION_BOUNDARY.md").read_text(encoding="utf-8")
-    require("REIMPLEMENTATION — NOT HISTORICAL SOURCE" in boundary, "boundary label missing")
+    boundary = (ROOT / "REFERENCE_IMPLEMENTATION.md").read_text(encoding="utf-8")
+    require("protocol reference implementation" in boundary.lower(), "reference-implementation label missing")
     checks.append("boundary_label")
 
     solver = BROADBAND / "solver" / "ns3d_spectral.py"

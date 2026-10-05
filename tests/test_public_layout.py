@@ -29,8 +29,8 @@ def test_ns2d_v033_public_layout_selftest() -> None:
     assert "SELFTEST_PASS" in result.stdout
 
 
-def test_broadband_reimplementation_verifier() -> None:
+def test_broadband_reference_implementation_verifier() -> None:
     result = run_public_verifier(
-        "experiments/broadband3d/reimplementation/verify_reimplementation.py"
+        "experiments/broadband3d/reference_implementation/verify_reference_implementation.py"
     )
     assert '"status": "PASS"' in result.stdout

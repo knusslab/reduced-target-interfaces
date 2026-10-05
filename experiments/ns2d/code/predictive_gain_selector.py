@@ -3,8 +3,7 @@
 The rule already existed three times: inline in the 2D Stage B producer, inline in the 3D
 Stage B producer, and inline again in the first SELECTOR draft.  Two implementations of one
 rule either share a mistake or drift apart, and an auditor that re-implements it cannot
-falsify the producer.  This module states it once; `tests/test_bigdata_predictive_gain_selector_v1.py`
-measures that it agrees with the 2D and 3D producers on synthetic input.
+falsify the producer.  This module states it once; the public test suite checks that the selector agrees with the staged producers on synthetic input.
 
 No new rule and no new threshold: the gain is clipped at zero, ordered stably by descending
 gain, the tail is the suffix sum in that order, and the selected rung is the first ladder

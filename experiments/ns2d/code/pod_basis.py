@@ -1,7 +1,6 @@
 """Canonical parent POD decomposition for the fresh 2D/3D successors, contract V2.
 
-Implements POD_CANONICAL_NUMERICAL_CONTRACT_V2_2026-07-27.md.  Derived from
-`bigdata_pod_canonical_v1.py` by copy; V2 renames the rank to `r_gram_resolved`, keeps the
+Implements the canonical POD numerical contract used by the staged NS2D experiment. The current version names the resolved Gram-path rank `r_gram_resolved`, keeps the
 direct-SVD tolerance as a diagnostic only, and computes the energy rank against the FULL
 centred Frobenius energy instead of renormalising the truncated spectrum.
 

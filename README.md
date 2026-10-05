@@ -1,27 +1,14 @@
 # Reduced Target Interfaces
 
-Code, experiment protocols, and result artifacts for:
+Code, experiment protocols, checkpoints, and result artifacts for:
 
 **Qualifying Reduced Scientific-Data Views as Training Interfaces for Scientific AI**
 
-Repository: https://github.com/knusslab/reduced-target-interfaces
+This repository supports the experiments reported in the paper. The central question is whether a fixed reduced representation can be used as a training target while preserving performance at the original full-field endpoint.
 
-This repository supports the experiments reported in the paper. It is intentionally narrower than the private research workspace: it contains the code and result artifacts needed to understand and reproduce the reported experimental scope, while excluding manuscript source, private research infrastructure, external datasets, and large checkpoints.
+## Quick verification
 
-## What is included
-
-| Study | Public contents | Role in the paper |
-| --- | --- | --- |
-| NS2D / PDEArena | experiment code, frozen protocol, tests, portable control, reference results | direct training after an inconclusive projection-error screen |
-| Diffusion-sorption / PDEBench | main experiment code, reuse study, matched-rank control, tests, reference results | aggregation sensitivity and learner-family reuse |
-| Broadband 3D | recovered spectral solver, later protocol-faithful reimplementation, result summary | a representation rejected by the projection-error screen |
-| CFDBench | frozen protocol and author-generated reference results | reuse of one fixed representation across learner families |
-
-The recovered CFDBench executable model definitions are not redistributed because their upstream source-code redistribution terms were not established.
-
-## Quick start
-
-The public runtime environment previously used for the packaged code is recorded in `repro/requirements-runtime-tested.txt`.
+The tested runtime dependencies are recorded in `repro/requirements-runtime-tested.txt`.
 
 ```bash
 python3 -m venv .venv
@@ -30,13 +17,43 @@ python -m pip install -r repro/requirements-runtime-tested.txt
 python -m pytest -q
 ```
 
-The previously verified public code completed **150 tests with 5 intentional skips**. The skipped checks require archived terminal arrays that are not redistributed here. The final release keeps the experiment Python bytes unchanged from that verified package.
+## Studies
+
+| Study | Public material | Paper role |
+| --- | --- | --- |
+| NS2D / PDEArena | experiment code, frozen protocol, tests, portable control, reference results | direct training after an inconclusive projection-error screen |
+| Diffusion-sorption / PDEBench | main experiment code, learner-family reuse, matched-rank control, checkpoints, reference results | direct training and aggregation sensitivity |
+| Broadband 3D | exact recovered spectral solver, protocol reference implementation, reference results | decisive projection-error rejection |
+| CFDBench | frozen protocol and author-generated reference results | reuse of one fixed representation across learner families |
+
+## Datasets
+
+The external datasets are obtained from their original publishers:
+
+- **NS2D / PDEArena:** [pdearena/NavierStokes-2D](https://huggingface.co/datasets/pdearena/NavierStokes-2D)
+- **Diffusion-sorption / PDEBench:** [PDEBench dataset on DaRUS](https://doi.org/10.18419/darus-2986)
+- **CFDBench:** [chen-yingfa/CFDBench](https://huggingface.co/datasets/chen-yingfa/CFDBench)
+- **Broadband 3D:** synthetic data generated from the study's numerical-solver/protocol lineage
+
+Pinned revisions, file identifiers, checksums, and example download commands are in [DATASETS.md](DATASETS.md).
+
+## Checkpoints
+
+The exact dense-target and reduced-target checkpoints for the reported **diffusion-sorption K = 8** study are included under:
+
+```text
+experiments/diffusion_sorption/main/checkpoints/
+```
+
+The corresponding basis, training mean, selected coefficient indices, and SHA-256 manifest are stored alongside them so that the reduced predictions can be decoded in the same output space used by the paper.
 
 ## Paper-to-code map
 
 ### NS2D
 
 - code: `experiments/ns2d/code/`
+- POD basis implementation: `experiments/ns2d/code/pod_basis.py`
+- predictive-gain selector: `experiments/ns2d/code/predictive_gain_selector.py`
 - protocol: `experiments/ns2d/protocols/QUALITY_CONVERGENCE_CONFIRM_V1.md`
 - tests: `experiments/ns2d/tests/`
 - portable control: `experiments/ns2d/controls/v033/`
@@ -45,6 +62,7 @@ The previously verified public code completed **150 tests with 5 intentional ski
 ### Diffusion-sorption
 
 - primary experiment: `experiments/diffusion_sorption/main/`
+- checkpoints and decode artifacts: `experiments/diffusion_sorption/main/checkpoints/`
 - learner-family reuse: `experiments/diffusion_sorption/reuse/`
 - matched-rank control: `experiments/diffusion_sorption/matched_control/`
 - reference results: `experiments/diffusion_sorption/reference_results/`
@@ -52,42 +70,27 @@ The previously verified public code completed **150 tests with 5 intentional ski
 ### Broadband 3D
 
 - recovered historical solver: `experiments/broadband3d/solver/ns3d_spectral.py`
-- later protocol-faithful reimplementation: `experiments/broadband3d/reimplementation/`
-- source-recovery boundary: `experiments/broadband3d/provenance/ORIGINAL_EXECUTOR_RECOVERY_STATUS.md`
-- paper-facing result summary: `experiments/broadband3d/reference_results/REFERENCE_RESULT_SUMMARY.json`
+- protocol reference implementation: `experiments/broadband3d/reference_implementation/`
+- reference results: `experiments/broadband3d/reference_results/`
 
-The reimplementation is not presented as the recovered historical orchestration, training launcher, or TEST evaluator.
+The historical solver is preserved exactly. The protocol reference implementation is provided to make the frozen Broadband contract executable and testable; it is not presented as the byte-identical historical training/evaluation executor.
 
 ### CFDBench
 
 - frozen protocol: `experiments/cfdbench/CFDBENCH_TUBE_PB_CROSS_LEARNER_PORTABILITY_V1_3_GPU_PROTOCOL.md`
 - reference results: `experiments/cfdbench/reference_results/`
-- source-availability boundary: `experiments/cfdbench/SOURCE_AVAILABILITY.md`
 
-## Reported values
+See `experiments/cfdbench/SOURCE_AVAILABILITY.md` for the source-redistribution boundary of the recovered upstream model definitions.
 
-A compact reader-facing index is in [RESULTS.md](RESULTS.md). The same values are available in machine-readable form at `results/reported_results.json`.
+## Reported results
 
-The experiment-specific JSON files under `experiments/*/reference_results/` remain the closest public records to the preserved study outputs.
+A compact index of the paper's main values is in [RESULTS.md](RESULTS.md), with machine-readable values in `results/reported_results.json`.
 
-## External data
-
-No external scientific dataset or trained checkpoint is redistributed in this repository.
-
-See [DATASETS.md](DATASETS.md) for pinned dataset identifiers, checksums, and acquisition instructions.
-
-## What is intentionally not included
-
-- the paper's LaTeX/Overleaf source;
-- private paths, hostnames, credentials, or research-governance files;
-- external datasets and trained checkpoints;
-- duplicate historical source trees;
-- CFDBench executable model definitions with unresolved redistribution terms;
-- archived terminal arrays that are not needed to inspect the reported paper-level results.
+The experiment-specific JSON files under `experiments/*/reference_results/` are the closest public records to the reported study outputs.
 
 ## Third-party material
 
-See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The repository-level MIT license applies to author-written material distributed under that license; third-party resources remain governed by their own licenses and notices.
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dataset and upstream-source licensing notes.
 
 ## License
 

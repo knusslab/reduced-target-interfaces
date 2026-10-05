@@ -25,7 +25,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
-from bigdata_pod_canonical_v2 import (  # noqa: E402
+from pod_basis import (  # noqa: E402
     canonical_parent_basis, orthonormality_residual)
 
 PROTOCOL_ID = "QUALITY_CONVERGENCE_CONFIRM_V1"
@@ -41,7 +41,7 @@ TRAIN_TRAJECTORIES = 60
 VALIDATION_TRAJECTORIES = 20
 PAIRS_PER_TRAJECTORY = 13
 
-#: pre-fixed multiplier on float64 eps, from `run_bigdata_quality_2d_v6_stage_a.py`
+#: pre-fixed multiplier on float64 eps from the predecessor Stage-A implementation
 CENTERING_RESIDUAL_MULTIPLIER = 1024.0
 
 #: which roles each stage may open at all. `unused` appears nowhere on purpose.

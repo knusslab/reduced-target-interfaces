@@ -40,7 +40,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 if str(HERE) not in sys.path:
     sys.path.insert(0, str(HERE))
 
-from bigdata_predictive_gain_selector_v1 import (  # noqa: E402
+from predictive_gain_selector import (  # noqa: E402
     canonical_predictive_gain_selector)
 from run_quality_convergence_confirm_v1 import (  # noqa: E402
     FAMILIES, PAIRS_PER_TRAJECTORY, PROTOCOL_ID, PROTOCOL_SHA256, StageBlocked,

@@ -1,28 +1,24 @@
 # Broadband 3D
 
-This directory contains the recoverable public pieces of the synthetic broadband 3D study.
+This directory contains the synthetic Broadband 3D study used for the projection-error rejection example.
 
-## What is historical
+## Key files
 
-- `solver/ns3d_spectral.py` is recovered historical numerical-solver source.
+- `solver/ns3d_spectral.py` — exact recovered numerical solver source.
+- `reference_implementation/` — executable reference implementation of the frozen Broadband protocol.
+- `reference_results/REFERENCE_RESULT_SUMMARY.json` — paper-facing result summary.
 
-## What is a later reimplementation
-
-- `reimplementation/` is a later protocol-faithful implementation with focused tests and a structural/algebraic verifier.
-
-The reimplementation is included to make the public package useful and testable, but it is not presented as recovered historical orchestration, training, or TEST-evaluator source.
+The exact historical training/evaluation executor for the reported run was not recovered. The reference implementation therefore makes the preserved protocol mechanics executable without presenting itself as the byte-identical historical trainer.
 
 ## Reported result
 
-The normalized projection-error lower bound is already far above the 1.05 limit:
+The normalized projection-error lower bound is already above the 1.05 limit:
 
-- K = 80: 10.69345
-- complete training span K = 95: 10.5994
+- K = 80: **10.69345**
+- complete training span K = 95: **10.5994**
 
-The K = 95 screen therefore rejects the fixed representation without requiring another reduced-target training run.
+The K = 95 screen therefore rejects the fixed representation without another reduced-target training run.
 
-## Recovery boundary
+## Data
 
-The historical orchestration/training/TEST-evaluator bytes were not found in the durable stores inspected during release engineering. The recovery record is in `provenance/ORIGINAL_EXECUTOR_RECOVERY_STATUS.md`.
-
-There is no external dataset bundle for this study; the data are synthetic and tied to the included solver/protocol lineage.
+Broadband 3D is synthetic. Its data-generation mechanics are tied to the included solver and frozen protocol.

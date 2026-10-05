@@ -130,7 +130,7 @@ def generate_pair(seed: int, solver) -> tuple[np.ndarray, np.ndarray]:
 
 if nn is not None:
     class FrozenUNet3D(nn.Module):
-        """One-level 3D U-Net specified by BIGDATA_HARD3D_NS32_CONFIRM_V1."""
+        """One-level 3D U-Net specified by the frozen Broadband 3D contract."""
 
         def __init__(self):
             super().__init__()
