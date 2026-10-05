@@ -24,7 +24,7 @@ python -m pytest -q
 | NS2D / PDEArena | experiment code, frozen protocol, tests, portable control, reference results | direct training after an inconclusive projection-error screen |
 | Diffusion-sorption / PDEBench | main experiment code, learner-family reuse, matched-rank control, checkpoints, reference results | direct training and aggregation sensitivity |
 | Broadband 3D | exact recovered spectral solver, protocol reference implementation, reference results | decisive projection-error rejection |
-| CFDBench | frozen protocol and author-generated reference results | reuse of one fixed representation across learner families |
+| CFDBench | frozen protocol, author-generated trained checkpoints, reference results | reuse of one fixed representation across learner families |
 
 ## Datasets
 
@@ -46,6 +46,14 @@ experiments/diffusion_sorption/main/checkpoints/
 ```
 
 The corresponding basis, training mean, selected coefficient indices, and SHA-256 manifest are stored alongside them so that the reduced predictions can be decoded in the same output space used by the paper.
+
+The complete author-produced CFDBench trained checkpoint set is also included under:
+
+```text
+experiments/cfdbench/checkpoints/
+```
+
+It contains 24 PyTorch files covering dense/reduced targets, FNO/U-Net learner families, seeds 0--2, and both sealed final-model and resumable-training states. Their exact hashes and byte sizes are recorded in `experiments/cfdbench/checkpoints/CHECKPOINT_MANIFEST.tsv`.
 
 ## Paper-to-code map
 
@@ -78,6 +86,7 @@ The historical solver is preserved exactly. The protocol reference implementatio
 ### CFDBench
 
 - frozen protocol: `experiments/cfdbench/CFDBENCH_TUBE_PB_CROSS_LEARNER_PORTABILITY_V1_3_GPU_PROTOCOL.md`
+- author-produced trained checkpoints: `experiments/cfdbench/checkpoints/`
 - reference results: `experiments/cfdbench/reference_results/`
 
 See `experiments/cfdbench/SOURCE_AVAILABILITY.md` for the source-redistribution boundary of the recovered upstream model definitions.

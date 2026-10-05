@@ -1,6 +1,6 @@
 # CFDBench source availability
 
-This public repository includes the frozen CFDBench experiment protocol and the author-generated reference-result artifacts used by the paper.
+This public repository includes the frozen CFDBench experiment protocol, the complete author-produced trained checkpoint set, and the author-generated reference-result artifacts used by the paper.
 
 The recovered private experiment implementation described its U-Net and FNO definitions as copies of pinned upstream CFDBench model semantics. During release preparation, the separate upstream source repository did not expose a root software license.
 
@@ -10,6 +10,7 @@ This source-availability boundary does not change the reported result. The publi
 
 - the frozen experiment protocol;
 - the fixed representation metadata needed by the reported study;
+- the complete author-produced trained checkpoint set under `checkpoints/`;
 - seedwise and family-level reference results;
 - per-case error artifacts that were cleared for the public package.
 

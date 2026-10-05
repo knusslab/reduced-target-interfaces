@@ -1,6 +1,6 @@
 # External datasets and source pins
 
-No external scientific dataset or trained checkpoint is redistributed in this repository. Download the datasets from their original publishers and verify the recorded identifiers before running the corresponding experiments.
+No external scientific dataset is redistributed in this repository. The exact author-produced diffusion-sorption K = 8 checkpoints are included under `experiments/diffusion_sorption/main/checkpoints/`, and the complete author-produced CFDBench trained checkpoint set is included under `experiments/cfdbench/checkpoints/`. No third-party or externally sourced trained checkpoints are bundled. Download the datasets from their original publishers and verify the recorded identifiers before running the corresponding experiments.
 
 ## NS2D — PDEArena NavierStokes-2D
 
