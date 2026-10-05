@@ -1,0 +1,226 @@
+{
+  "access_counters": {
+    "hdf5_field_reads": {
+      "selection": 0,
+      "test": 200,
+      "train": 0,
+      "unused": 0,
+      "validation": 0
+    },
+    "raw_bytes_hashed": {
+      "selection": 0,
+      "test": 0,
+      "train": 0
+    }
+  },
+  "access_ledger": [
+    {
+      "family": 61749,
+      "file": "NavierStokes2D_test_61949_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    },
+    {
+      "family": 61991,
+      "file": "NavierStokes2D_test_62191_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    },
+    {
+      "family": 97473,
+      "file": "NavierStokes2D_test_97673_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    },
+    {
+      "family": 433143,
+      "file": "NavierStokes2D_test_433343_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    },
+    {
+      "family": 445636,
+      "file": "NavierStokes2D_test_445836_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    },
+    {
+      "family": 452245,
+      "file": "NavierStokes2D_test_452445_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    },
+    {
+      "family": 453445,
+      "file": "NavierStokes2D_test_453645_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    },
+    {
+      "family": 471651,
+      "file": "NavierStokes2D_test_471851_0.50000.h5",
+      "mode": "field_read",
+      "role": "test",
+      "trajectories": 25
+    }
+  ],
+  "bootstrap": {
+    "functional": "median_of_per_seed_ratios",
+    "replicates": 10000,
+    "resample_digest": "d8593afdb58d609efe32e1d434298bc1ffcc329d99bad4176c2ec740cf006f87",
+    "seed": 20260811,
+    "shared_resample": true,
+    "trajectories": 200
+  },
+  "bootstrap_blocks": {
+    "floor_K_next": {
+      "functional": "median_of_per_seed_ratios",
+      "interval": [
+        0.5962529903953863,
+        0.6128708034620022
+      ],
+      "resample_digest": "d8593afdb58d609efe32e1d434298bc1ffcc329d99bad4176c2ec740cf006f87"
+    },
+    "floor_K_prop": {
+      "functional": "median_of_per_seed_ratios",
+      "interval": [
+        0.6906542383928662,
+        0.7090691480046714
+      ],
+      "resample_digest": "d8593afdb58d609efe32e1d434298bc1ffcc329d99bad4176c2ec740cf006f87"
+    },
+    "quality_K_next": {
+      "functional": "median_of_per_seed_ratios",
+      "interval": [
+        0.9597481048087743,
+        0.975457906901126
+      ],
+      "resample_digest": "d8593afdb58d609efe32e1d434298bc1ffcc329d99bad4176c2ec740cf006f87"
+    },
+    "quality_K_prop": {
+      "functional": "median_of_per_seed_ratios",
+      "interval": [
+        0.966770172564591,
+        0.9825951278902728
+      ],
+      "resample_digest": "d8593afdb58d609efe32e1d434298bc1ffcc329d99bad4176c2ec740cf006f87"
+    }
+  },
+  "dense_per_seed_test_mse": {
+    "0": 0.029242615217487535,
+    "1": 0.031289993300424424,
+    "2": 0.029038004312363714
+  },
+  "elapsed_seconds": 11.15770105808042,
+  "environment": {
+    "numpy": "2.4.6",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3"
+  },
+  "loaded_state_digests": {
+    "K_next_seed0": "de716e2dcacbe6b9fa8dc346583ba767b380f8adfdf8e7de002769ca540b1f1f",
+    "K_next_seed1": "8f98873b659d5f9eb6a7aa48134575b6561cf6ba1550c256ad2ee918129d30bd",
+    "K_next_seed2": "b09d11369adfbc531b4f0f5e4e9fb2b5b144420f751ccb823183ab98958bff1f",
+    "K_prop_seed0": "605368080b2ec1f5d3b880db1a276c79d408be368d7320f65d2709c80aafe995",
+    "K_prop_seed1": "321c70d4941e319e069654fcd58603d5780470e7d619a1833f8338150e09546c",
+    "K_prop_seed2": "9c3e19652033057c45d5741b8510e264d5923630312fd91d9ba801883bb99088",
+    "dense_seed0": "e1a92d3fc592cc346a3816a98fb369170e8a47126d4e06eb2d840dab2f87e6bf",
+    "dense_seed1": "89f6d03e685b840b7d6705f1699516ea63d86dd1e3c998fe83a97903d3941be4",
+    "dense_seed2": "494016be9012082c428aa8e079ac87a56a918b88e3d6aeb8310fc98303bf0948"
+  },
+  "one_shot_marker": "TEST_ACCESS_CONSUMED.json",
+  "pretest_seal_sha256": "56d6320aa03df19fa1fc4cc369b4f58de8f2a1aee87cd9be703a7ce433a3d010",
+  "protocol_id": "QUALITY_CONVERGENCE_CONFIRM_V1",
+  "protocol_sha256": "4e3ee2da43720ec208b9e0a481823bbb26d3bdf5aa0f97c738f2b199b6dec6ca",
+  "raw_per_trajectory": "TEST_PER_TRAJECTORY.npz",
+  "raw_per_trajectory_sha256": "7d51a2c5a9cc52e275dd09a7e836a1c7e5eceb946dad767c9343a2badf5bc901",
+  "results": {
+    "K_next": {
+      "floor_interval": [
+        0.5962529903953863,
+        0.6128708034620022
+      ],
+      "floor_point": 0.6044861664237994,
+      "functional": "median_of_per_seed_ratios",
+      "indices_sha256": "14d4033eadab6e183faf1b5e37ef40145377c51e9232d99b04859fc6fb7ec9fd",
+      "interval": [
+        0.9597481048087743,
+        0.975457906901126
+      ],
+      "is_leading_prefix": false,
+      "k": 48,
+      "l_perp": 0.017676756369025298,
+      "per_seed_floor_ratios": {
+        "0": 0.6044861664237994,
+        "1": 0.5649332104134879,
+        "2": 0.6087455659443836
+      },
+      "per_seed_ratios": {
+        "0": 0.9678831455517902,
+        "1": 0.9021276800548502,
+        "2": 0.9720045444387907
+      },
+      "per_seed_test_mse": {
+        "0": 0.028303434400862484,
+        "1": 0.02822756906504369,
+        "2": 0.028225072153050732
+      },
+      "point": 0.9678831455517902,
+      "verdict": "TOLERANCE_MET_UNDER_CONVERGENCE"
+    },
+    "K_prop": {
+      "floor_interval": [
+        0.6906542383928662,
+        0.7090691480046714
+      ],
+      "floor_point": 0.6997430027803827,
+      "functional": "median_of_per_seed_ratios",
+      "indices_sha256": "7bdcc1e20de8efd6ac5ed54633e9f3a2a8bf99724aafd05956afee0663a5f763",
+      "interval": [
+        0.966770172564591,
+        0.9825951278902728
+      ],
+      "is_leading_prefix": false,
+      "k": 32,
+      "l_perp": 0.02046231538143604,
+      "per_seed_floor_ratios": {
+        "0": 0.6997430027803827,
+        "1": 0.6539571672314319,
+        "2": 0.7046736119094679
+      },
+      "per_seed_ratios": {
+        "0": 0.9746798011122361,
+        "1": 0.9181681056999236,
+        "2": 0.9910934153059846
+      },
+      "per_seed_test_mse": {
+        "0": 0.028502186384182397,
+        "1": 0.028729473876013992,
+        "2": 0.028779374867610463
+      },
+      "point": 0.9746798011122361,
+      "verdict": "TOLERANCE_MET_UNDER_CONVERGENCE"
+    }
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "stage": "E",
+  "stage_c_sha256": "01204ec2de1ddde22a5387cec242d96d29b9ce70a646f1fdc13f6334d0541daa",
+  "stage_d_sha256": "7beec73503131b1e5cf4ff92fafd45aba52c436c2a86f5b8a80e96a74948de7d",
+  "stage_e_executor_sha256": "3456292523dd16d5dcf13e55114033b4558470bbda7aa9c075055cf103f2a25b",
+  "status": "STAGE_E_COMPLETE",
+  "test_rows": 2600,
+  "test_trajectories": 200,
+  "tolerance": 1.05,
+  "written_at_utc": "2026-08-11T02:31:27.641878+00:00"
+}

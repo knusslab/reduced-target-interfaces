@@ -1,0 +1,89 @@
+{
+  "schema": "reduced-target-interfaces-reported-results-v1",
+  "paper": "Qualifying Reduced Scientific-Data Views as Training Interfaces for Scientific AI",
+  "evaluation_criterion": 1.05,
+  "ns2d": {
+    "k": 32,
+    "seed_ratios": [
+      0.9746798011122362,
+      0.9181681056999232,
+      0.9910934153059848
+    ],
+    "median_ratio": 0.9746798011122362,
+    "normalized_projection_error_lower_bound": 0.6997430027803828,
+    "system_measurements": {
+      "training_split_object_mib": {
+        "dense": 780,
+        "reduced_target_pipeline": 392.8243408203125
+      },
+      "fixed_step_epoch_seconds": {
+        "dense": 0.32351435103919357,
+        "reduced_target_pipeline": 0.18867316853720695
+      }
+    },
+    "source": "experiments/ns2d/reference_results/REFERENCE_RESULT_SUMMARY.json and experiments/ns2d/reference_results/STAGE_E.json; system measurements are copied from the exact paper-bound verified summary"
+  },
+  "cfdbench": {
+    "k": 16,
+    "family_medians": {
+      "fno": 0.36268394444997254,
+      "unet": 0.5334728565965233
+    },
+    "decision_statistic": 0.5334728565965233,
+    "seed_ratios": [
+      0.36268394444997254,
+      0.4034979864662792,
+      0.27782815760276575,
+      0.5666107145749213,
+      0.38339602252059884,
+      0.5334728565965233
+    ],
+    "source": "experiments/cfdbench/reference_results/REFERENCE_RESULT_SUMMARY.json"
+  },
+  "diffusion_sorption": {
+    "k": 8,
+    "main": {
+      "seed_ratios": [
+        0.6180599887364462,
+        1.314099743591427,
+        0.7076493522122312
+      ],
+      "median_ratio": 0.7076493522122312,
+      "runs_above_criterion": 1
+    },
+    "reuse": {
+      "mlp_seed_ratios": [
+        1.3156,
+        0.9239,
+        0.7815,
+        0.6406,
+        1.2982
+      ],
+      "fno_seed_ratios": [
+        0.694,
+        0.659,
+        0.8496,
+        0.3486,
+        1.1044
+      ],
+      "family_medians": {
+        "mlp": 0.9239,
+        "fno": 0.694
+      },
+      "decision_statistic": 0.9239,
+      "runs_above_criterion": 3
+    },
+    "source": "experiments/diffusion_sorption/reference_results/REFERENCE_RESULT_SUMMARY.json and experiments/diffusion_sorption/reuse/RESULT_BINDING.json"
+  },
+  "broadband3d": {
+    "k80": {
+      "normalized_projection_error_lower_bound": 10.69345,
+      "direct_test_median_ratio": 10.7204
+    },
+    "k95": {
+      "normalized_projection_error_lower_bound": 10.5994,
+      "reduced_target_training_run": false
+    },
+    "source": "experiments/broadband3d/reference_results/REFERENCE_RESULT_SUMMARY.json"
+  }
+}

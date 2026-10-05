@@ -1,0 +1,16 @@
+{
+  "X_sha256": "c92280125b6861c8a5dd0cd3299691e1534fbb483af72cc44ab7e090c890f3d0",
+  "Y_sha256": "85398a290d2613fa2c54a2e8e481c6562b66c9db5d383adb4cc5653e3f5cb449",
+  "finite": true,
+  "runtime_seconds": 28.56475067138672,
+  "seed": 69999,
+  "sequential_worker_equal": true,
+  "shape_X": [
+    20,
+    1024
+  ],
+  "shape_Y": [
+    20,
+    1024
+  ]
+}

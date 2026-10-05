@@ -1,0 +1,16 @@
+{
+  "study": "Broadband 3D",
+  "evaluation_criterion": 1.05,
+  "k80": {
+    "normalized_projection_error_lower_bound": 10.69345,
+    "direct_test_median_ratio": 10.7204,
+    "interpretation": "projection-error lower bound alone exceeds the criterion"
+  },
+  "k95_complete_training_span": {
+    "normalized_projection_error_lower_bound": 10.5994,
+    "reduced_target_training_run": false,
+    "screening_trajectories": 64,
+    "interpretation": "complete rank-95 training span still exceeds the criterion"
+  },
+  "public_source_boundary": "Historical numerical solver is included; original orchestration/training/TEST-evaluator bytes were not recovered. The later reimplementation is explicitly labelled as non-historical."
+}

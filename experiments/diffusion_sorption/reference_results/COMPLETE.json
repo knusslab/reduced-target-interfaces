@@ -1,0 +1,18 @@
+{
+  "Q_TEST": 0.7076493522122312,
+  "completed_at_utc": "2026-08-16T09:02:48.637776+00:00",
+  "execution_lineage": "DIFF_SORP_SECOND_CONTRACT_V1_INFRA_CORRECTION_R2",
+  "final_audit_sha256": "067f82579ef769a341404a46ecdb6530ea42ecb84da77a011bc666554e631380",
+  "new_training": 0,
+  "pretest_audit_sha256": "4d2928d6fbb1238ce7fad1487bcf114693a0395698d11aac16e31178fe32f15d",
+  "reselection": 0,
+  "run_seal_sha256": "89ebf54cfcf2b8e1e4eade2218ca43c95074b92e8586f46836a62dbc6a6ffa9d",
+  "standalone_final_auditor_command_digest": "44551a1ba5c5e182b5d74f0376705430eea246bc74df711ce423023a71b101a6",
+  "standalone_final_auditor_job_id": "exec-standalone-final-20260816T090209Z",
+  "status": "SCIENTIFIC_RUN_COMPLETE",
+  "test_access": 200,
+  "test_per_trajectory_sha256": "54f5e470092ea40c5ec4318814e07677d7f093f0bb47d4930a227bf874af4d8a",
+  "test_result_sha256": "e4855b9f3600f3283ac3609186f1a984dd364b3977e53f9c6e978a45fa68976c",
+  "unused_access": 0,
+  "verdict": "PASS"
+}

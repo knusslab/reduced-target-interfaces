@@ -1,0 +1,202 @@
+{
+  "Q_family": {
+    "fno": 0.36268394444997254,
+    "unet": 0.5334728565965233
+  },
+  "Q_port": 0.5334728565965233,
+  "access_ledger": {
+    "case_json_value_reads": {
+      "selection": 20,
+      "test": 15,
+      "train": 1300,
+      "validation": 30
+    },
+    "events": [
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163328.6155584
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163332.8146312
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163363.4748838
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163395.6115425
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163426.9410453
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163464.1101322
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163504.5134163
+      },
+      {
+        "event": "materialize_validation_v1_3",
+        "n_arrays": 30,
+        "n_cases": 15,
+        "n_json": 15,
+        "role": "validation",
+        "time_unix": 1787163544.5841842
+      },
+      {
+        "event": "materialize_selection_v1_3",
+        "n_arrays": 40,
+        "n_cases": 20,
+        "n_json": 20,
+        "role": "selection",
+        "time_unix": 1787165554.813215
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165556.5673316
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165588.045569
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165618.84549
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165650.4795277
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165687.4785116
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165726.6127074
+      },
+      {
+        "event": "materialize_validation_v1_3",
+        "n_arrays": 30,
+        "n_cases": 15,
+        "n_json": 15,
+        "role": "validation",
+        "time_unix": 1787165771.2733176
+      },
+      {
+        "event": "materialize_test_v1_3",
+        "n_arrays": 30,
+        "n_cases": 15,
+        "n_json": 15,
+        "role": "test",
+        "time_unix": 1787165772.5325422
+      }
+    ],
+    "protocol": "CFDBENCH_TUBE_PB_CROSS_LEARNER_PORTABILITY_V1_3_GPU",
+    "protocol_sha256": "1c7c9477f0b3726ff7b06f82901440fbeda1889fb3d8455d34f12b4b66ab30c7",
+    "semantic_array_reads": {
+      "selection": 40,
+      "test": 30,
+      "train": 2600,
+      "validation": 60
+    },
+    "semantic_case_reads": {
+      "selection": 20,
+      "test": 15,
+      "train": 1300,
+      "validation": 30
+    },
+    "test_source_open_completed": true
+  },
+  "artifact_sha256": "fd04049fb75b902d72ca69c39e6527b225fd45129e4daeeb31de2fdf01131cc9",
+  "bootstrap": {
+    "Q_FNO_95pct": [
+      0.19734607357184838,
+      0.4436265148777262
+    ],
+    "Q_UNet_95pct": [
+      0.2835334630044226,
+      0.6643879505810732
+    ],
+    "Q_port_95pct": [
+      0.31168212171680293,
+      0.6643879505810732
+    ],
+    "conditions_on_training_seeds": true,
+    "method": "paired case-cluster bootstrap; PCG64",
+    "n": 10000,
+    "seed": 20260818
+  },
+  "interpretation_if_fail": "artifact portability is not uniform across the two frozen learner contracts",
+  "interpretation_if_pass": "same exact artifact passed FNO and U-Net without reselection under this frozen CFDBench contract",
+  "seedwise_ratios": {
+    "fno_seed0": 0.36268394444997254,
+    "fno_seed1": 0.4034979864662792,
+    "fno_seed2": 0.27782815760276575,
+    "unet_seed0": 0.5666107145749213,
+    "unet_seed1": 0.38339602252059884,
+    "unet_seed2": 0.5334728565965233
+  },
+  "status": "PORTABILITY_PASS",
+  "test_case_count": 15,
+  "test_case_errors_sha256": "3952c30bd8409a42b67c4b67da95adfd104de672387c3015b5b7af2affbf02c4",
+  "test_rows": 45,
+  "threshold": 1.05
+}

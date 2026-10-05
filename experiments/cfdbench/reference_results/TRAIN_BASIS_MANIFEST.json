@@ -1,0 +1,53 @@
+{
+  "D": 8580,
+  "N_train_rows": 300,
+  "R": 299,
+  "access_ledger": {
+    "case_json_value_reads": {
+      "selection": 0,
+      "test": 0,
+      "train": 100,
+      "validation": 0
+    },
+    "events": [
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163328.6155584
+      }
+    ],
+    "protocol": "CFDBENCH_TUBE_PB_CROSS_LEARNER_PORTABILITY_V1_3_GPU",
+    "protocol_sha256": "1c7c9477f0b3726ff7b06f82901440fbeda1889fb3d8455d34f12b4b66ab30c7",
+    "semantic_array_reads": {
+      "selection": 0,
+      "test": 0,
+      "train": 200,
+      "validation": 0
+    },
+    "semantic_case_reads": {
+      "selection": 0,
+      "test": 0,
+      "train": 100,
+      "validation": 0
+    },
+    "test_source_open_completed": false
+  },
+  "basis_file_sha256": "46fdb64bd22a1a40b63b008afca1b40e68368bce44d7bdb5c80e89d0448ade9e",
+  "candidate_ladder": [
+    8,
+    16,
+    32,
+    64,
+    96,
+    128,
+    192,
+    256,
+    299
+  ],
+  "protocol_sha256": "1c7c9477f0b3726ff7b06f82901440fbeda1889fb3d8455d34f12b4b66ab30c7",
+  "sign_rule": "largest-absolute component positive",
+  "status": "TRAIN_BASIS_SEALED"
+}

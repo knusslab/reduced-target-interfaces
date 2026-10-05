@@ -1,0 +1,14 @@
+{
+  "study": "diffusion-sorption MLP/FNO reuse",
+  "status": "MANUSCRIPT_VALUES_PRESERVED_SOURCE_PENDING",
+  "K": 8,
+  "threshold": 1.05,
+  "MLP_seed_ratios": [1.3156,0.9239,0.7815,0.6406,1.2982],
+  "FNO_seed_ratios": [0.6940,0.6590,0.8496,0.3486,1.1044],
+  "Q_MLP": 0.9239,
+  "Q_FNO": 0.6940,
+  "Q_port": 0.9239,
+  "adverse_count": 3,
+  "source_producing_code": null,
+  "boundary": "Values are preserved in the manuscript audit/replay sources, but the exact producing source has not yet been identified."
+}

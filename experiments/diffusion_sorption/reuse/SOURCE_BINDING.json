@@ -1,0 +1,36 @@
+{
+  "frozen_package_sha256": "5a78cd27c200352b62fe0a34c055613365805398903579d6c04bc674a35f3799",
+  "frozen_protocol_sha256": "52275a1302092801b8bd16d5818cf24ce5212f3bee4df3428e30bee1d2e66dba",
+  "public_dataset": {
+    "bytes": 4217044280,
+    "file": "1D_diff-sorp_NA_NA.h5",
+    "name": "PDEBench 1D diffusion-sorption",
+    "pdebench_commit": "4ff3e3a4aa1561721b5571fa3a048a0a463e0568",
+    "publisher_md5": "9d466d1213065619d087319e16d9a938",
+    "sha256": "8e48ab3efd39ab63524d92e85a4e0db46347b72e7c5b05edf81e1c9637a3ab2d",
+    "url": "https://darus.uni-stuttgart.de/api/access/datafile/133020"
+  },
+  "review_release_boundary": {
+    "contains_exact_independent_auditor_bytes": true,
+    "contains_exact_inherited_target_representation_bytes": true,
+    "contains_exact_runner_bytes": true,
+    "contains_per_trajectory_holdout_errors": false,
+    "contains_raw_benchmark_arrays": false,
+    "contains_trained_checkpoints": false,
+    "exact_production_dependency_versions_recovered": false,
+    "failure_first_test_count": 8,
+    "holdout_reopened_for_packaging": false,
+    "training_rerun_performed_for_packaging": false
+  },
+  "schema": "DIFF_SORP_REVIEW_SOURCE_BINDING_V1",
+  "scientific_lineage": "DIFF_SORP_R2_UNUSED_CROSS_LEARNER_PORTABILITY_V1",
+  "source_files": {
+    "code/audit_diff_sorp_r2_unused_cross_learner_v1.py": "55cbdc4a63560bbc9a3b5051bdc0d69dfb55a68a44a49759bc8b3b0cebc9df3c",
+    "code/run_diff_sorp_r2_unused_cross_learner_v1.py": "5a156b4f44d096630434f91c21b4d37e76ddc9ae1208772a6711fc64488a5712",
+    "inherited/BASIS_FLOAT32.npy": "3958eceb871c779cda4c3f5545b47cdff99f4e7ee32f2a7a5b4c830d58275f50",
+    "inherited/SELECTED_INDICES_INT64.npy": "dc940ab47c70520db150fcd27e3297f03f689c3d4baf251fea07d4d8ec725894",
+    "inherited/TRAIN_MEAN_FLOAT32.npy": "b6c164c35b1506596a1a94bc7f7c788475498fa356eba8539cc6d77c0545fce3",
+    "tests/test_diff_sorp_r2_unused_cross_learner_v1.py": "c93dd1b693cc9680d5d80a0beddf383cb4e1764babb7230f9b446daf9d64145a"
+  },
+  "source_frozen_date": "2026-08-20"
+}

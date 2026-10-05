@@ -1,0 +1,32 @@
+{
+  "Q_TEST": 0.7076493522122312,
+  "bootstrap": {
+    "interval": [
+      0.6939179797546812,
+      0.7209612406439221
+    ],
+    "point": 0.7076493522122312
+  },
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 4072430940531852417,
+  "compressed_per_seed_mse": {
+    "0": 2.1277931848405994e-07,
+    "1": 3.131113749794677e-07,
+    "2": 2.426207874438157e-07
+  },
+  "dense_per_seed_mse": {
+    "0": 3.44269686376339e-07,
+    "1": 2.3827063090639994e-07,
+    "2": 3.428545319590023e-07
+  },
+  "per_seed_ratios": {
+    "0": 0.6180599887364462,
+    "1": 1.314099743591427,
+    "2": 0.7076493522122312
+  },
+  "protocol_id": "DIFF_SORP_SECOND_CONTRACT_V1",
+  "raw_per_trajectory_sha256": "54f5e470092ea40c5ec4318814e07677d7f093f0bb47d4930a227bf874af4d8a",
+  "status": "TEST_EVALUATION_COMPLETE",
+  "tolerance": 1.05,
+  "verdict": "PASS"
+}

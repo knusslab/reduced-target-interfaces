@@ -1,0 +1,13 @@
+{
+  "study": "diffusion-sorption original K=8",
+  "protocol_id": "DIFF_SORP_SECOND_CONTRACT_V1",
+  "K": 8,
+  "selected_indices": [0,1,2,3,4,5,6,8],
+  "seed_ratios": [0.6180599887364462, 1.314099743591427, 0.7076493522122312],
+  "Q": 0.7076493522122312,
+  "threshold": 1.05,
+  "adverse_seed_count": 1,
+  "raw_per_trajectory_sha256": "54f5e470092ea40c5ec4318814e07677d7f093f0bb47d4930a227bf874af4d8a",
+  "test_result_sha256": "e4855b9f3600f3283ac3609186f1a984dd364b3977e53f9c6e978a45fa68976c",
+  "source": "reference_results/TEST_RESULT.json and ANALYZE_R2.json"
+}

@@ -1,0 +1,128 @@
+{
+  "access_ledger": {
+    "case_json_value_reads": {
+      "selection": 0,
+      "test": 0,
+      "train": 700,
+      "validation": 15
+    },
+    "events": [
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163328.6155584
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163332.8146312
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163363.4748838
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163395.6115425
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163426.9410453
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163464.1101322
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163504.5134163
+      },
+      {
+        "event": "materialize_validation_v1_3",
+        "n_arrays": 30,
+        "n_cases": 15,
+        "n_json": 15,
+        "role": "validation",
+        "time_unix": 1787163544.5841842
+      }
+    ],
+    "protocol": "CFDBENCH_TUBE_PB_CROSS_LEARNER_PORTABILITY_V1_3_GPU",
+    "protocol_sha256": "1c7c9477f0b3726ff7b06f82901440fbeda1889fb3d8455d34f12b4b66ab30c7",
+    "semantic_array_reads": {
+      "selection": 0,
+      "test": 0,
+      "train": 1400,
+      "validation": 30
+    },
+    "semantic_case_reads": {
+      "selection": 0,
+      "test": 0,
+      "train": 700,
+      "validation": 15
+    },
+    "test_source_open_completed": false
+  },
+  "dense_validation_median": {
+    "fno": 0.004265873619200041,
+    "unet": 0.005908521885673205
+  },
+  "dense_validation_mse_by_seed": {
+    "fno": [
+      0.004265873619200041,
+      0.004205647285562009,
+      0.0044659559226905305
+    ],
+    "unet": [
+      0.00431863060221076,
+      0.008323112890745202,
+      0.005908521885673205
+    ]
+  },
+  "persistence_case_mse": [
+    0.024764202535152435,
+    0.025512712076306343,
+    0.6156461834907532,
+    0.025409072637557983,
+    0.7875092029571533,
+    0.047875791788101196,
+    0.024949535727500916,
+    0.023681364953517914,
+    0.025414636358618736,
+    0.1261906772851944,
+    0.2831939458847046,
+    0.025523072108626366,
+    0.5347055792808533,
+    0.025466404855251312,
+    0.25638383626937866
+  ],
+  "persistence_validation_mse": 0.1901484145472447,
+  "selection_reads_before_gate": 0,
+  "status": "DENSE_LEARNER_QUALIFICATION_PASS",
+  "test_reads_before_gate": 0
+}

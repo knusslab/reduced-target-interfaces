@@ -1,0 +1,26 @@
+{
+  "status": "PORTABILITY_PASS",
+  "protocol": "CFDBENCH_TUBE_PB_CROSS_LEARNER_PORTABILITY_V1_3_GPU",
+  "protocol_sha256": "1c7c9477f0b3726ff7b06f82901440fbeda1889fb3d8455d34f12b4b66ab30c7",
+  "dataset_archive_sha256": "d2b8a65a7198a7af31556a4c47c688e4841a5e4143347a40fd29394b3b8861f6",
+  "K": 16,
+  "threshold": 1.05,
+  "Q_family": {
+    "fno": 0.36268394444997254,
+    "unet": 0.5334728565965233
+  },
+  "Q_port": 0.5334728565965233,
+  "seedwise_ratios": {
+    "fno_seed0": 0.36268394444997254,
+    "fno_seed1": 0.4034979864662792,
+    "fno_seed2": 0.27782815760276575,
+    "unet_seed0": 0.5666107145749213,
+    "unet_seed1": 0.38339602252059884,
+    "unet_seed2": 0.5334728565965233
+  },
+  "test_case_count": 15,
+  "test_rows": 45,
+  "artifact_sha256": "fd04049fb75b902d72ca69c39e6527b225fd45129e4daeeb31de2fdf01131cc9",
+  "test_case_errors_sha256": "3952c30bd8409a42b67c4b67da95adfd104de672387c3015b5b7af2affbf02c4",
+  "source": "sanitized summary extracted from archived TEST_RESULT_V1.json"
+}

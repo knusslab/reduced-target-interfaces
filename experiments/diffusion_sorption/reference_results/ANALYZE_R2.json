@@ -1,0 +1,38 @@
+{
+  "Q_TEST": 0.7076493522122312,
+  "analyzed_at_utc": "2026-08-16T09:02:58.745241+00:00",
+  "bootstrap": {
+    "interval": [
+      0.6939179797546812,
+      0.7209612406439221
+    ],
+    "point": 0.7076493522122312
+  },
+  "bootstrap_replicates": 10000,
+  "claim_boundary": [
+    "one preregistered diffusion-sorption target family",
+    "evaluated MLP family and frozen training contract",
+    "no universal K or intrinsic-rank claim",
+    "no cross-backbone or architecture-causality claim"
+  ],
+  "compressed_per_seed_mse": {
+    "0": 2.1277931848405994e-07,
+    "1": 3.131113749794677e-07,
+    "2": 2.426207874438157e-07
+  },
+  "dense_per_seed_mse": {
+    "0": 3.44269686376339e-07,
+    "1": 2.3827063090639994e-07,
+    "2": 3.428545319590023e-07
+  },
+  "interpretation": "CONDITIONALLY_SUPPORTED_ON_PREREGISTERED_DIFFUSION_SORPTION_TARGET",
+  "per_seed_ratios": {
+    "0": 0.6180599887364462,
+    "1": 1.314099743591427,
+    "2": 0.7076493522122312
+  },
+  "schema": "DIFF_SORP_R2_ANALYZE_V1",
+  "status": "ANALYSIS_COMPLETE",
+  "threshold": 1.05,
+  "verdict": "PASS"
+}

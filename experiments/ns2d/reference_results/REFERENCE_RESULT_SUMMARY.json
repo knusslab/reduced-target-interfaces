@@ -1,0 +1,14 @@
+{
+  "study": "NS2D primary",
+  "protocol_id": "QUALITY_CONVERGENCE_CONFIRM_V1",
+  "protocol_sha256": "4e3ee2da43720ec208b9e0a481823bbb26d3bdf5aa0f97c738f2b199b6dec6ca",
+  "stage_e_executor_sha256": "3456292523dd16d5dcf13e55114033b4558470bbda7aa9c075055cf103f2a25b",
+  "K": 32,
+  "seed_ratios": [0.9746798011122362, 0.9181681056999232, 0.9910934153059848],
+  "Q": 0.9746798011122362,
+  "bootstrap_interval": [0.966770172564591, 0.9825951278902728],
+  "raw_omitted_space_floor": 0.02046231538143604,
+  "K48_sensitivity_Q": 0.9678831455517903,
+  "raw_per_trajectory_sha256": "7d51a2c5a9cc52e275dd09a7e836a1c7e5eceb946dad767c9343a2badf5bc901",
+  "source": "reference_results/STAGE_E.json and PHASE1_COMPUTE.json"
+}

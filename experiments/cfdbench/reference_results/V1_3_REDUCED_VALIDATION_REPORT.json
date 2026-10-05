@@ -1,0 +1,170 @@
+{
+  "access_ledger": {
+    "case_json_value_reads": {
+      "selection": 20,
+      "test": 0,
+      "train": 1300,
+      "validation": 30
+    },
+    "events": [
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163328.6155584
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163332.8146312
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163363.4748838
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163395.6115425
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163426.9410453
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163464.1101322
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787163504.5134163
+      },
+      {
+        "event": "materialize_validation_v1_3",
+        "n_arrays": 30,
+        "n_cases": 15,
+        "n_json": 15,
+        "role": "validation",
+        "time_unix": 1787163544.5841842
+      },
+      {
+        "event": "materialize_selection_v1_3",
+        "n_arrays": 40,
+        "n_cases": 20,
+        "n_json": 20,
+        "role": "selection",
+        "time_unix": 1787165554.813215
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165556.5673316
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165588.045569
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165618.84549
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165650.4795277
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165687.4785116
+      },
+      {
+        "event": "materialize_train_v1_3",
+        "n_arrays": 200,
+        "n_cases": 100,
+        "n_json": 100,
+        "role": "train",
+        "time_unix": 1787165726.6127074
+      },
+      {
+        "event": "materialize_validation_v1_3",
+        "n_arrays": 30,
+        "n_cases": 15,
+        "n_json": 15,
+        "role": "validation",
+        "time_unix": 1787165771.2733176
+      }
+    ],
+    "protocol": "CFDBENCH_TUBE_PB_CROSS_LEARNER_PORTABILITY_V1_3_GPU",
+    "protocol_sha256": "1c7c9477f0b3726ff7b06f82901440fbeda1889fb3d8455d34f12b4b66ab30c7",
+    "semantic_array_reads": {
+      "selection": 40,
+      "test": 0,
+      "train": 2600,
+      "validation": 60
+    },
+    "semantic_case_reads": {
+      "selection": 20,
+      "test": 0,
+      "train": 1300,
+      "validation": 30
+    },
+    "test_source_open_completed": false
+  },
+  "artifact_sha256": "fd04049fb75b902d72ca69c39e6527b225fd45129e4daeeb31de2fdf01131cc9",
+  "report_only_no_selection_change": true,
+  "status": "REDUCED_VALIDATION_REPORT_COMPLETE",
+  "validation_mse_by_seed": {
+    "fno": [
+      0.0016699584792756164,
+      0.0015487153044280906,
+      0.001419696047863302
+    ],
+    "unet": [
+      0.002387796307448298,
+      0.003907863852024699,
+      0.004952179132184635
+    ]
+  }
+}

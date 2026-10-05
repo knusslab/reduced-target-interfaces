@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Reduced Target Interfaces"
+type: software
+authors:
+  - family-names: "Jang"
+    given-names: "Jaegeun"
+  - family-names: "Kwon"
+    given-names: "Young-Woo"
+year: 2026
+repository-code: "https://github.com/knusslab/reduced-target-interfaces"

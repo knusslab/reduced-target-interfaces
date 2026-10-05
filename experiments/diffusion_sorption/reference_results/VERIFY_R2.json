@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "analysis_matches_complete": true,
+    "complete_status": true,
+    "final_auditor_pass": true,
+    "new_training_0": true,
+    "r1_remains_closed": true,
+    "r1_test_marker_absent": true,
+    "reselection_0": true,
+    "test_access_200": true,
+    "unused_access_0": true
+  },
+  "final_audit_sha256": "067f82579ef769a341404a46ecdb6530ea42ecb84da77a011bc666554e631380",
+  "run_seal_sha256": "89ebf54cfcf2b8e1e4eade2218ca43c95074b92e8586f46836a62dbc6a6ffa9d",
+  "schema": "DIFF_SORP_R2_VERIFY_V1",
+  "status": "VERIFIED",
+  "test_result_sha256": "e4855b9f3600f3283ac3609186f1a984dd364b3977e53f9c6e978a45fa68976c",
+  "verified_at_utc": "2026-08-16T09:03:08.042813+00:00"
+}

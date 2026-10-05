@@ -1,0 +1,57 @@
+{
+  "Q_FNO": 0.6939549547061317,
+  "Q_MLP": 0.9239228084130341,
+  "Q_port": 0.9239228084130341,
+  "bootstrap": {
+    "interval95": {
+      "Q_FNO": [
+        0.6820771394300773,
+        0.7058689753541334
+      ],
+      "Q_MLP": [
+        0.9125105278471742,
+        0.936338259137333
+      ],
+      "Q_port": [
+        0.9125105278471742,
+        0.936338259137333
+      ]
+    },
+    "replicates": 10000,
+    "seed": 13859889106505471460
+  },
+  "final_audit_bound_hashes": {
+    "ACCESS_LEDGER_FINAL.json": "3b3ed55674cebbb6699fd6576a2944ab82bd30f4ee37ae822eecd7941c9fa3ec",
+    "FINAL_RESULT.json": "b7947c80cdd329f4289dd1263a77bcdb6a5d6b43188c99a2ccad0dc05aba20f3",
+    "UNUSED_ACCESS_ONCE.json": "d87cdff6299a98c67e88be874c9ff7c652b770eb7954ed0a4ad07721115cce19",
+    "UNUSED_PER_TRAJECTORY_ERRORS.npz": "6c294e730dda96fc9f774f305cd4a63241fb54690fe0152f6a50e066b480e09b"
+  },
+  "heldout_role": {
+    "one_shot": true,
+    "rows": 3200,
+    "trajectories": 160
+  },
+  "max_seed_ratio": 1.3155923557745115,
+  "review_release_boundary": "The final per-trajectory artifact and checkpoints are not redistributed in this review archive; these exact terminal hashes bind the verified result record.",
+  "schema": "DIFF_SORP_PORTABILITY_RESULT_BINDING_V1",
+  "scientific_lineage": "DIFF_SORP_R2_UNUSED_CROSS_LEARNER_PORTABILITY_V1",
+  "seed_ratios": {
+    "FNO": {
+      "10": 0.6939549547061317,
+      "11": 0.6589958780421906,
+      "12": 0.8495807127373729,
+      "13": 0.34856295682679456,
+      "14": 1.1044075225845815
+    },
+    "MLP": {
+      "10": 1.3155923557745115,
+      "11": 0.9239228084130341,
+      "12": 0.7815024425222996,
+      "13": 0.6405628039172392,
+      "14": 1.2981885047350674
+    }
+  },
+  "seed_uniform_pass": false,
+  "threshold": 1.05,
+  "verdict": "PORTABILITY_PASS"
+}
